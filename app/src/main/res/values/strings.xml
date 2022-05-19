@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">OneTwoTrip_TestTask</string>
+    <plurals name="flight_plurals">
+        <item quantity="zero">без перелетов</item>
+        <item quantity="one">перелет</item>
+        <item quantity="two">перелета</item>
+        <item quantity="few">перелета</item>
+        <item quantity="many">перелетов</item>
+        <item quantity="other">перелетов</item>
+    </plurals>
+    <plurals name="flight_transfer_plurals">
+        <item quantity="zero">без пересадок</item>
+        <item quantity="one">пересадка</item>
+        <item quantity="two">пересадки</item>
+        <item quantity="few">пересадки</item>
+        <item quantity="many">пересадок</item>
+        <item quantity="other">пересадок</item>
+    </plurals>
+    <plurals name="flight_transfer_more_plurals">
+        <item quantity="zero">белетов</item>
+        <item quantity="one">билет</item>
+        <item quantity="two">билета</item>
+        <item quantity="few">билета</item>
+        <item quantity="many">билетов</item>
+        <item quantity="other">билетов</item>
+    </plurals>
+</resources>
