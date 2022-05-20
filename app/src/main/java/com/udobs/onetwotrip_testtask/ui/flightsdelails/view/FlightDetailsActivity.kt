@@ -82,7 +82,7 @@ fun ActivityScreen(flight: Flight?, selectedPrice: Int) {
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     val prettyPrice =
-                        flight?.prices?.get(selectedPrice)?.amount?.toPriceString() ?: "Error"
+                        flight?.sortedPrices?.get(selectedPrice)?.amount?.toPriceString() ?: "Error"
                     Text(
                         text = "Приобрести за $prettyPrice ${flight?.currency?.value}",
                         color = MaterialTheme.colors.primary,
