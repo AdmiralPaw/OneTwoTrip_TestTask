@@ -1,4 +1,4 @@
-package com.udobs.onetwotrip_testtask.data.model
+package com.udobs.onetwotrip_testtask.data.model.flights
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
@@ -7,7 +7,7 @@ data class Flight(
     @SerializedName("currency")
     val currency: Currency,
     @SerializedName("prices")
-    val prices: List<FlightPrice>,
+    var prices: List<FlightPrice>,
     @SerializedName("trips")
     val trips: List<FlightTrip>,
 ) : Serializable {
@@ -16,6 +16,9 @@ data class Flight(
 
     val to: FlightTrip.Airport
         get() = trips.last().to
+
+    val sortedPrices
+        get() = prices.sortedBy { it.amount }
 
     val cheapestPrice: Int
         get() = prices.minOf { it.amount }
@@ -33,5 +36,4 @@ data class Flight(
         @SerializedName("USD")
         USD("\$"),
     }
-
 }

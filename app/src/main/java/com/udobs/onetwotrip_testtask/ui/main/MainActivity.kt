@@ -16,21 +16,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.udobs.onetwotrip_testtask.ui.theme.OneTwoTrip_TestTaskTheme
 import com.udobs.onetwotrip_testtask.R
-import com.udobs.onetwotrip_testtask.ui.flights.views.FlightsActivity
+import com.udobs.onetwotrip_testtask.ui.flights.view.FlightsActivity
+import com.udobs.onetwotrip_testtask.ui.theme.OneTwoTrip_TestTaskTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             OneTwoTrip_TestTaskTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting()
+                    MainScreen()
                 }
             }
         }
@@ -38,12 +37,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting() {
+fun MainScreen() {
+    // For starting new activity
     val context = LocalContext.current
+
     Column(
-        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.fillMaxSize(),
     ) {
         Image(painter = painterResource(id = R.drawable.onetwotrip_logo), contentDescription = null)
         Spacer(modifier = Modifier.height(16.dp))
