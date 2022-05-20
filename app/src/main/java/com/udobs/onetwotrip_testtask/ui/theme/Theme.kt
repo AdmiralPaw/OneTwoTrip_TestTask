@@ -21,11 +21,12 @@ private val DarkColorPalette = darkColors(
 )
 
 private val LightColorPalette = lightColors(
-    primary = Color.White,
-    primaryVariant = SilverChalice,
-    secondary = Color.White,
+    primary = AntiFlashWhite,
+    primaryVariant = AntiFlashWhite,
+    secondary = VividCerulean,
+    secondaryVariant = SilverChalice,
     background = RaisinBlack,
-    surface = Color.White,
+    surface = AntiFlashWhite,
     onPrimary = Color.Black,
     onSecondary = Color.Black,
     onBackground = Color.White,

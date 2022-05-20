@@ -16,12 +16,4 @@
         <item quantity="many">пересадок</item>
         <item quantity="other">пересадок</item>
     </plurals>
-    <plurals name="flight_transfer_more_plurals">
-        <item quantity="zero">белетов</item>
-        <item quantity="one">билет</item>
-        <item quantity="two">билета</item>
-        <item quantity="few">билета</item>
-        <item quantity="many">билетов</item>
-        <item quantity="other">билетов</item>
-    </plurals>
 </resources>
